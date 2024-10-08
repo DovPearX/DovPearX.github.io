@@ -15,7 +15,7 @@
         }
 
         h1 {
-            font-size: 4vw; /* Skalowanie względem szerokości okna */
+            font-size: 4vw; /* Domyślny rozmiar względem szerokości ekranu */
             color: #fff;
             text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
             animation: glow 2s infinite ease-in-out;
@@ -32,6 +32,14 @@
                 text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
             }
         }
+
+        /* Zwiększenie rozmiaru tekstu na mniejszych urządzeniach, np. telefonach */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 8vw; /* Większy tekst na mniejszych ekranach */
+            }
+        }
+
     </style>
 </head>
 <body>
